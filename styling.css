@@ -1,6 +1,10 @@
-
+body
+{
+    background:linear-gradient(45deg,rgb(239, 224, 205), rgb(211, 186, 152),rgb(220, 180, 125),rgb(247, 229, 212));
+}
 .buttons
 {
+    position: relative;
     height: 40px;
     width: 100px;
     margin: 2px;
@@ -25,26 +29,84 @@
 {
     height: 2000px;
     width: 97vw;
-    border:solid black 1px;
     border-radius: 1%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(255, 244, 233);
+    background-color: rgba(218, 164, 103, 0.911);
+    position: relative;
+    opacity: 0%;
+    animation-name: blur;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-hr{
-    margin-top: 0px;
-}
-h1
+hr
 {
-    margin-bottom: 0px;
-    font-style: italic;
-    font-size: 50px;
-    font-weight: 300;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;  
+    height: 2px;
+    border:1px solid black ;
+    background-color: black;
 }
-
+.h1
+{
+    height: 50px;
+    width: 200px;
+    margin: 0px;
+    position: relative;
+    left: 10000px;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300;
+    font-family:Tahoma, sans-serif;
+    animation-name: leftt;
+    animation-duration: 0.8s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes leftt {
+    0%
+    {
+        left: 10000px;
+    }
+    50%
+    {
+        left: 50vw;
+    }
+    100%
+    {
+        left:0px;
+    }
+}
+@keyframes blurr {
+    0%
+    {   
+        opacity: 0%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
+@keyframes blur {
+    0%
+    {
+        opacity: 0%;
+    }
+    50%
+    {
+        opacity: 50%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
 .bodyy
 {
     display: flex;
@@ -60,17 +122,29 @@ h1
 .smallbox
 {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     height: 450px;
     width: 30vw;
-    border: solid black 1px;
+    border-radius: 4px;
+    background-color: rgb(232, 211, 182);
+    opacity: 0%;
+    animation-name: blurr;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .contact
 {
     height: 120px;
     width: 94vw;
-    border:solid black 1px;
+    background-blend-mode: multiply;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .images
 {
@@ -78,4 +152,99 @@ h1
     height: 250px;
     width: 26vw;
 }
-
+.headings
+{
+    margin: 0px;
+    position: relative;
+    left:25px;
+    top: 10px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style:oblique;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dates
+{
+    margin: 0px;
+    height: 20px;
+    position: relative;
+    left: 50%;
+    top: 18px;
+    font-size: small;
+}
+img
+{
+    margin: 0px;
+    position: relative;
+    left: 25px;
+    top:-25px;
+}
+.textss
+{
+    font-size: 25px;
+    width: 250px;
+    align-self: center;
+    position: relative;
+    left: 20%;
+}
+#author
+{
+    position: relative;
+    top:320px;
+    left: -30%;
+}
+#ad
+{
+    margin: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 30vw;
+    height: 450px;
+}
+#adtext
+{
+    position: absolute;
+    top: 1000px;
+    left: 72vw;
+    height: 40px;
+    width: 22vw;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+#adheading
+{
+    position: absolute;
+    top: 1000px;
+    left: 72vw;
+}
+#linktoapply
+{
+    background-color: white;
+    position: absolute;
+    left: 77vw;
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    border-color: rgb(46, 28, 28);
+}
+#linktoapply:hover
+{
+    background-color: rgb(46, 28, 28);
+    color: white;
+}
+.logos
+{
+    height: 40px;
+    width: 40px;
+    mix-blend-mode: multiply;
+}
+.logos:hover
+{
+    filter: drop-shadow( 0px 0px 5px rgba(224, 148, 7, 0.89)) ;
+}
