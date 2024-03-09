@@ -33,10 +33,6 @@ Contributions are welcome! If you find any issues or want to add new features, f
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Acknowledgments
-
-- Thanks to [Font Awesome](https://fontawesome.com/) for the awesome icons.
-- Inspiration from other developers' portfolios.
 
 ---
 
